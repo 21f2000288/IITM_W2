@@ -1,8 +1,8 @@
 name: Cache Example Workflow
 
 on:
-  workflow_dispatch: # run manually
-  push:              # also run on push to main
+  workflow_dispatch:
+  push:
     branches:
       - main
 
@@ -19,8 +19,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Cache dependencies
-      - name: prime-cache-85b2199   # 👈 must match exactly
+      - name: prime-cache-85b2199
         id: cache
         uses: actions/cache@v4
         with:
