@@ -27,4 +27,4 @@ jobs:
           key: cache-85b2199
 
       - name: Echo cache result
-        run: echo "Cache result: ${{ steps.cache.outputs.cache-hit }}"
+        run: echo "Cache result:${{ steps.cache.outputs.cache-hit }}"
