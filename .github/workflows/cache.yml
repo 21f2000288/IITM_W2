@@ -20,8 +20,8 @@ jobs:
           python-version: '3.x'
 
       # Cache dependencies
-      - name: prime-cache-85b2199   # ✅ must match exactly
-        id: cache                  # ✅ required so we can reference outputs
+      - name: prime-cache-85b2199   # 👈 must match exactly
+        id: cache
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
